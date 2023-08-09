@@ -76,17 +76,6 @@
     font-size: 14px;
     color: #555;
   }
-  .login-container .error-message {
-    color: #d63031;
-    margin-top: 10px;
-  }
-  .login-container .error-message strong {
-    font-weight: bold;
-  }
-  
-  .login-container .error-message small {
-    font-size: 12px;
-  }
   
  
   .login-container button:hover {
