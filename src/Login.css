@@ -1,44 +1,102 @@
 .login-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #f0f0f0;
-    margin: 0;
-  }
-  
-  .login-container form {
-    display: flex;
+  display: flex;
   flex-direction: column;
-    align-items: center;
-    background-color: #fff;
-    border-radius: 8px;
-    padding: 20px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    max-width: 400px;
-  }
+  justify-content: center;
+  align-items: center;
+  height:93vh;
+  background-image:url('./BG2.jpg'); 
+  background-size: cover; 
+  background-position: center; 
+  margin: 0;
+  border-radius:8px ;
+  border-color: #1560b1;
   
-  .login-container h2 {
-    margin-bottom: 20px;
-  }
+}
   
-  .login-container input {
-    margin-bottom: 10px;
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    width: 100%;
-  }
+.login-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(135, 140, 173, 0);
+  border-radius: 8px;
+  border-color: #214b77;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+}
+  
+.login-container h2 {
+  margin-bottom: 10px;
+ 
+  font-size: 36px; 
+  background-image: linear-gradient(to right, #8aa0dd, #233a75);
+  background-clip: text; 
+  color: transparent; 
+  -webkit-background-clip: text; 
+  text-align: center; 
+  
+}
+  
+.login-container input {
+  margin-bottom: 15px;
+  padding: 12px;
+  border: 2px solid #2f2ea3;
+  border-radius: 8px;
+  width: 100%;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+  background-color: #f7f7f7;
+  color: #333;
+}
   
   .login-container button {
-    background-color: #007bff;
+    background-image: linear-gradient(to right, #007bff, #0056b3);
     color: #fff;
     border: none;
     border-radius: 4px;
     padding: 10px;
     cursor: pointer;
     width: 100%;
+    transition: background-color 0.3s ease;
   }
+  .login-container .forgot-password {
+    color: #e8edf1;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .login-container .forgot-password:hover {
+    color: #064086; 
+  }
+
+  .login-container p {
+    margin-top: 15px;
+    font-size: 14px;
+    color: #555;
+  }
+  .login-container .error-message {
+    color: #d63031;
+    margin-top: 10px;
+  }
+  .login-container .error-message strong {
+    font-weight: bold;
+  }
+  
+  .login-container .error-message small {
+    font-size: 12px;
+  }
+  
+ 
+  .login-container button:hover {
+    background-image: linear-gradient(to right, #0056b3, #003c7e);
+  }
+ 
+  
+  
+  
+  
+  
   
   

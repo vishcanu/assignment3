@@ -2,19 +2,22 @@ import React from 'react';
 import './App.css';
 import Signup from './Signup';
 import Login from './Login';
+import Navbar from './Navbar';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App" style={{display:'flex',flexDirection:'row',flex:1}}>
-      <div style={{flex:1}}>
-        <Signup />
-      </div>
+    
+    <Router>
+         <Navbar />
+          <Routes>
+            <Route path="/" element={<Login />}></Route>
+            <Route path="/Signup" element={<Signup />}></Route>
+          </Routes>
+    
 
-      <div style={{flex:1}}>
-        <Login />
-      </div>
-
-    </div>
+    </Router>
+    
   );
 }
 

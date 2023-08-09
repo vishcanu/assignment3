@@ -9,7 +9,11 @@ function App() {
   const handleLogin = () => {
     
     const passwordRegex = /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$/;
-
+    const usernameRegex = /^[A-Za-z]+$/;
+    
+    if (!usernameRegex.test(username)){
+      alert('Enter Valid Name');
+    }
     if (!username || !password) {
       alert('Please fill in both username and password.');
       return;
@@ -23,6 +27,9 @@ function App() {
     }
 
     alert('Login successful!');
+  };
+  const handleForgotPassword = () => {
+    alert('Forgot Password link clicked. check your Email');
   };
   
 
@@ -45,6 +52,9 @@ function App() {
         <button type="button" onClick={handleLogin}>
           Login
         </button>
+        <p className="forgot-password" onClick={handleForgotPassword}>
+          Forgot Password?
+        </p>
       </form>
     </div>
   );
